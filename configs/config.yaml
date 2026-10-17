@@ -1,0 +1,15 @@
+experiment:
+  name: "AI Phishing Structural-Linguistic Benchmark"
+  version: "1.0.0"
+
+data:
+  sample_path: "data/sample/phishing_samples.json"
+
+metrics:
+  target_error_unit: "words_per_100"
+  max_latency_ms: 2000
+
+independent_variables:
+  generation_methods:
+    - "llm_generated"
+    - "manual_traditional"
