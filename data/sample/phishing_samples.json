@@ -1,12 +1,37 @@
 [
   {
     "id": 1,
-    "text": "Dear Valued Customer, Your account requires immediate verification due to unusual activity. Please confirm your identity.",
-    "type": "llm_generated"
+    "text": "Dear Valued Customer, Your account requires immediate verification due to unusual activity. Please confirm your identity via the secure portal.",
+    "type": "llm_generated",
+    "has_red_flags": false,
+    "source": "ChatGPT-4"
   },
   {
     "id": 2,
     "text": "URGENT!! U account balance low click link now to get $500 free bonus before expires today!!",
-    "type": "manual_traditional"
+    "type": "manual_traditional",
+    "has_red_flags": true,
+    "source": "OSINT Phishing Archive"
+  },
+  {
+    "id": 3,
+    "text": "Notice: Security policy update requires all remote personnel to update credentials within 24 hours to prevent access disruption.",
+    "type": "llm_generated",
+    "has_red_flags": false,
+    "source": "Claude 3.5 Sonnet"
+  },
+  {
+    "id": 4,
+    "text": "Hey bro ur password leaked go here right now http://bit.ly/fake-link to reset it fast",
+    "type": "manual_traditional",
+    "has_red_flags": true,
+    "source": "OSINT Phishing Archive"
+  },
+  {
+    "id": 5,
+    "text": "Dear User, Attached is your monthly invoice. Please review the payment details at your earliest convenience.",
+    "type": "llm_generated",
+    "has_red_flags": false,
+    "source": "Gemini 1.5 Pro"
   }
 ]
