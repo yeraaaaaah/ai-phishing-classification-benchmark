@@ -1,0 +1,6 @@
+id,text,type,has_red_flags,source
+1,"Dear Valued Customer, Your account requires immediate verification due to unusual activity. Please confirm your identity via the secure portal.",llm_generated,false,ChatGPT-4
+2,"URGENT!! U account balance low click link now to get $500 free bonus before expires today!!",manual_traditional,true,OSINT Phishing Archive
+3,"Notice: Security policy update requires all remote personnel to update credentials within 24 hours to prevent access disruption.",llm_generated,false,Claude 3.5 Sonnet
+4,"Hey bro ur password leaked go here right now http://bit.ly/fake-link to reset it fast",manual_traditional,true,OSINT Phishing Archive
+5,"Dear User, Attached is your monthly invoice. Please review the payment details at your earliest convenience.",llm_generated,false,Gemini 1.5 Pro
