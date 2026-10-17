@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "text": "Dear Valued Customer, Your account requires immediate verification due to unusual activity. Please confirm your identity.",
+    "type": "llm_generated"
+  },
+  {
+    "id": 2,
+    "text": "URGENT!! U account balance low click link now to get $500 free bonus before expires today!!",
+    "type": "manual_traditional"
+  }
+]
