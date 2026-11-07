@@ -67,8 +67,21 @@ def aggregate_metrics(df: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == '__main__':
-  raw_df = load_raw_data('data/raw/test_run.jsonl')
+  import os
+
+  data_path = (
+      'data/raw/test_run.jsonl'
+      if os.path.exists('data/raw/test_run.jsonl')
+      else '../data/raw/test_run.jsonl'
+  )
+  out_path = (
+      'data/processed/metrics_summary.csv'
+      if os.path.exists('data')
+      else '../data/processed/metrics_summary.csv'
+  )
+
+  raw_df = load_raw_data(data_path)
   eval_df = filter_warmup(raw_df)
   summary_df = aggregate_metrics(eval_df)
-  summary_df.to_csv('data/processed/metrics_summary.csv', index=False)
-  print('Processed metrics saved to data/processed/metrics_summary.csv')
+  summary_df.to_csv(out_path, index=False)
+  print(f'Processed metrics saved to {out_path}')

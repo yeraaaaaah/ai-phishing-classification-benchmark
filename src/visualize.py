@@ -122,9 +122,22 @@ def plot_distribution_boxplot(
 
 
 if __name__ == '__main__':
+  import os
   from process_data import filter_warmup, load_raw_data
 
-  raw_df = load_raw_data('data/raw/test_run.jsonl')
+  data_path = (
+      'data/raw/test_run.jsonl'
+      if os.path.exists('data/raw/test_run.jsonl')
+      else '../data/raw/test_run.jsonl'
+  )
+  output_dir = (
+      'reports/figures'
+      if os.path.exists('reports')
+      else '../reports/figures'
+  )
+
+  raw_df = load_raw_data(data_path)
   eval_df = filter_warmup(raw_df)
-  plot_latency_vs_load(eval_df)
-  plot_distribution_boxplot(eval_df)
+  plot_latency_vs_load(eval_df, output_dir=output_dir)
+  plot_distribution_boxplot(eval_df, output_dir=output_dir)
+  print(f'All figures successfully exported to {output_dir}')
