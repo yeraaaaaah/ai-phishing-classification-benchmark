@@ -1,0 +1,16 @@
+{
+    "primary_metric": {
+        "detection_accuracy_pct": 94.2
+    },
+    "secondary_metrics": {
+        "error_rate_per_100_words": 1.15,
+        "flesch_kincaid_index": 68.4,
+        "trust_rating_likert": 5.4,
+        "action_execution_rate_pct": 12.8
+    },
+    "guardrail_metrics": {
+        "execution_latency_ms": 1340,
+        "false_positive_rate_pct": 3.1,
+        "unhandled_exceptions": 0
+    }
+}
